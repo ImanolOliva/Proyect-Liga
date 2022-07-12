@@ -35,8 +35,9 @@ a h2{
     font-size: 40px;
 }
 /* LISTA DE INICIO */
-.navegacion{
-}
+/* .navegacion{
+
+} */
 .navegacion ul{
     list-style: none;
     text-align: center;
@@ -87,43 +88,3 @@ a h2{
     opacity: 1;
 }
 /* TABLAS POR CATEGORIA */
-h1{
-    text-align: center;
-    margin-top: 70px;
-}
-#tablaGeneral:hover{
-    color: grey;
-}
-.container-2009{
-    margin-top: 50px;
-    caption-side: bottom;
-    margin-left:20px;
-    /* margin-right: auto; */
-    border-collapse: collapse;
-    background-color: rgba(41, 177, 198, 0.394);;
-}
-.content-2009 th{
-    background-color: black;
-    color:  rgba(41, 177, 198, 0.394);;
-}
-.content-2009 td,th {
-    border:4px solid black;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
-}
-.content-2010 td,th{
-    border:4px solid black;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
-
-}
-.content-2010 th{
-    background-color: black;
-    color:  rgba(41, 177, 198, 0.394);;
-}
