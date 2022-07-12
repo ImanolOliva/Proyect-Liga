@@ -1,0 +1,215 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body, header,footer{
+   background-color: white;
+}
+header{
+    border: auto;
+    display: flex; /*Quiero que se vea horizontal*/
+    justify-content: space-between; /*para que los contenidos dentro del header se separen  uno este es A y el otro en B*/
+    min-height: 70px; /*Le doy un min al alto para que se adapte al responsive*/
+    align-items: center;/*Alineo los elementos Verticalmente*/
+    background-color:#B6DBD7;
+    font-size: 1rem;
+
+}
+.logo{
+  display: flex; /*Agarro todo el contenido que quiero que sea horizontal*/
+  align-items: center;/*Alineo los elementos Verticalmente*/
+  
+}
+.logo img{
+    height:  150px; /*Le doy una altura minima 50 px para que me quede tipo logo*/
+    width: 250px;
+    align-items: center;/*Alineo los elementos Verticalmente*/
+    margin-right: 53px;/*Separo el texto de la imagen*/
+}
+a h2{
+    text-decoration: none;/*Le saco los hipervinculos raros*/
+    padding-left: 120px;/*Doy espacio entre palabra y palabra*/
+    font-size: 40px;
+}
+/* LISTA DE INICIO */
+.navegacion{
+}
+.navegacion ul{
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+}
+.menu > li{
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    font-size: 1rem;
+
+
+}
+.menu>li>a{
+    display: block;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 1rem;
+
+
+}
+.menu li a:hover{
+    transition: all .3s;
+}
+/* SUB MENU  */
+.subMenu{
+    position: absolute;
+    width: 80%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5;
+
+}
+.subMenu li a{
+    display: block;
+    padding: 15px;
+    color: rgba(41, 177, 198, 0.394);
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.menu li:hover .subMenu{
+    visibility: visible;
+    opacity: 1;
+}
+/* CARRUSEL */
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite
+    alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%
+}
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+/*TABLA GENERAL */
+h1{
+    text-align: center;
+    margin-top: 70px;
+}
+#tablaGeneral:hover{
+    color: grey;
+}
+table{
+    margin-top: 50px;
+    caption-side: bottom;
+    margin-left:20px;
+    /* margin-right: auto; */
+    border-collapse: collapse;
+    background-color: rgba(41, 177, 198, 0.394);;
+}
+th{
+    background-color: black;
+    color:  rgba(41, 177, 198, 0.394);;
+}
+td,th{
+    border:4px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.zonaDiamante2,
+.zonaDiamante3,
+.zonaDiamante4,
+.zonaDiamante5,
+.zonaDiamante6,
+.zonaDiamante7{
+    background-color:yellow;
+}
+.zonaOro1,
+.zonaOro2,
+.zonaOro3,
+.zonaOro4,
+.zoraOro5,
+.zonaOro6{
+    background-color: green;
+}
+.zonaPlata1,
+.zonaPlata2,
+.zonaPlata3,
+.zonaPlata4,
+.zonaPlata5,
+.zonaPlata6{
+    background-color: blue;
+}
+.zonaLata1,
+.zonaLata2,
+.zonaLata3,
+.zonaLata4,
+.zonaLata5,
+.zonaLata6{
+    background-color: pink;
+}
+.container-form{ 
+    /* CONTAINER PRINCIPAL */
+    width: max-content;
+    float: right;
+    margin-right: 10px;
+    margin-top: 410px;
+}
+.container-contact{
+    display: block;
+    line-height: 112px;
+}
+.container-contact h2{
+    padding:10px;
+    line-height: 112px;
+    text-align: center;
+
+}
+.logo1 {
+   display: flex;
+   align-items: center;
+   
+}
+.logo1 img{
+    margin-right: 13px;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+}
+.logo2 img{
+    margin-right: 13px;
+}
+.container-imagenes img {
+    width: 100px;
+    padding: 10px;
+}
